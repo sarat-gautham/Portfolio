@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio </title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+            body 
+            {
+             margin: 0;
+             font-family: Arial;
+            }
+    </style>
+</head>
+<body style="background-color:rgb(97, 174, 200);height:100%">
+        <div class="topnav">
+        <a href="" class="split"><i class="fa fa-user-circle-o" style="font-size:28px;"> <mark style="font-size:28px; font-family:'Calibri'; background-color:rgb(97, 174, 200); color:white"> SARAT GAUTHAM </mark> </i> </a>
+        <a href="Resume.html" class="active1"> Resume </a>
+        <a href="Certificates.html"> Certificates </a>
+        <a href="Projects.html"> Projects </a>
+        <a href="Expertise.html"> Expertise </a>
+        <a href="Education.html"> Education </a>
+        <a href="index.html"> Home </a>
+      </div>
+<button class="accordion" style="font-size:18px">1. Portfolio Creation</button>
+  <div class="panel">
+  <br>
+    <img src="images/Portfolio Pic.png" alt="Portfolio image" style="width:250px;height:200px">
+    <p style="font-size:18px; text-align:justify;font-family:Arial;color:rgb(54, 52, 52);padding-left:44px; margin-right:10%;">
+          The Portfolio is a self-intoducing website of our own knowledge and achievements.
+          It can be very useful fill our details whatever we done.
+          So, that we can easily notify our growth beyond the website eventually. 
+     </p>
+     <p style="font-size:18px;font-family:Arial;color:rgb(54, 52, 52);margin-left:44px;"> Technologies Used: </p>
+          <ul style="font-size:18px;font-family:Arial;color:rgb(54, 52, 52);margin-left:44px;"> 
+            <li style="font-size:18px;font-family:Arial;color:rgb(54, 52, 52);margin-left:49px;"> HTML </li>
+            <li style="font-size:18px;font-family:Arial;color:rgb(54, 52, 52);margin-left:49px"> CSS </li>
+          </ul>
+  </div>
+
+<button class="accordion" style="font-size:18px">2. E-Commerce Website</button>
+<div class="panel">
+<br>
+  <img src="images/E-commerce Pic.png" alt="E-commerce image" style="width:250px;height:200px">
+<p style="font-size:18px;text-align:justify;font-family:Arial;color:rgb(54, 52, 52);padding-left:44px; margin-right:10%;">
+        The E-commerce website is used to purchase the products through the website and it helps to show the product details.
+        Buy this product through online and it is very userfriendly too.
+        I have Developed a Sports Shop Website that will help the people to buy the sports equipments for playing or practicing by this website.
+       </p>
+       <p style="font-size:18px;font-family:Arial;color:rgb(54, 52, 52);margin-left:44px;"> Technologies Used: </p>
+       <ul style="font-size:18px;font-family:Arial;color:rgb(54, 52, 52);margin-left:44px;"> 
+         <li style="font-size:18px;font-family:Arial;color:rgb(54, 52, 52);margin-left:49px;"> HTML </li>
+         <li style="font-size:18px;font-family:Arial;color:rgb(54, 52, 52);margin-left:49px"> CSS </li>
+       </ul>
+  </div>
+  
+<button class="accordion" style="font-size:18px">3.To-Do List</button>
+<div class="panel">
+<br>
+<img src="images/To-Do List Pic.jpg" alt="To-Do List image" style="width:250px;height:200px">
+<p style="font-size:18px;text-align:justify;font-family:Arial;color:rgb(54, 52, 52);padding-left:44px; margin-right:10%;">
+        This To-do List is very useful to note their work then and there.It will helps to finish the task quickly. After completing the task we can remove it and we can add a new task instantly.
+       </p>
+       <p style="font-size:18px;font-family:Arial;color:rgb(54, 52, 52);margin-left:44px;"> Technologies Used: </p>
+       <ul style="font-size:18px;font-family:Arial;color:rgb(54, 52, 52);margin-left:44px;"> 
+         <li style="font-size:18px;font-family:Arial;color:rgb(54, 52, 52);margin-left:49px;"> MERN Stack (Mongo DB, Express Js, React Js, Node Js).</li>
+       </ul>
+  </div>
+<script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+     
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+         this.classList.toggle("active");
+         var panel = this.nextElementSibling;
+         if (panel.style.maxHeight) 
+         {
+           panel.style.maxHeight = null;
+         } 
+         else 
+         {
+           panel.style.maxHeight = panel.scrollHeight + "px";
+         } 
+       });
+     }
+     </script>
+</body>
+</html>
